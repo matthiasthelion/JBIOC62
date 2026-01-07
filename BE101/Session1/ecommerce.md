@@ -57,30 +57,30 @@ Một trang web bán hàng trực tuyến cần quản lý thông tin về:
     * Trạng thái
 4. Thực thể: Hợp đồng lao động
     * **Mã hợp đồng lao động**
-    * Mã nhân viên (user_id)
+    * Mã nhân viên (user_id) - FK
     * Ngày ký hợp đồng
     * Ngày hết hạn hợp đồng
 5. Thực thể: Sản phẩm
-    * Mã sản phẩm (mã SKU)
+    * **Mã sản phẩm (mã SKU)**
     * Mã vạch bao bì
-    * Danh mục sản phẩm
-    * Nhà cung cấp
+    * Danh mục sản phẩm - FK
+    * Nhà cung cấp - FK
     * Giá sản phẩm (tính bằng VND)
     * Mô tả sản phẩm
     * Trạng thái
 6. Thực thể: Danh mục sản phẩm
-    * Mã danh mục
+    * **Mã danh mục**
     * Tên danh mục
     * Ảnh danh mục (cloud link)
     * Mô tả
     * Trạng thái
 7. Thực thể: Giỏ hàng
-    * Mã khách hàng (user_id)
-    * Mã sản phẩm
+    * **Mã khách hàng (user_id)** - FK
+    * **Mã sản phẩm** - FK
     * Số lượng
 8. Thực thể: Đơn hàng
-    * Mã đơn hàng (order_id)
-    * Mã khách hàng (user_id)
+    * **Mã đơn hàng (order_id)**
+    * Mã khách hàng (user_id) - FK
     * Ngày đặt hàng
     * Người nhận hàng
     * Hình thức vận chuyển (delivery_type)
@@ -90,8 +90,8 @@ Một trang web bán hàng trực tuyến cần quản lý thông tin về:
     * Trạng thái
 
 9. Thực thể yếu: order_detail (lưu thông tin chi tiết về đơn hàng)
-    * Mã đơn hàng
-    * Mã sản phẩm
+    * **Mã đơn hàng** - FK
+    * **Mã sản phẩm** - FK
     * Số lượng
     * Giá bán
 
@@ -112,4 +112,5 @@ Một trang web bán hàng trực tuyến cần quản lý thông tin về:
 - Một đơn hàng có nhiều chi tiết nhưng một bản ghi chi tiết chỉ thuộc về một đơn hàng ==> thuộc tính Mã đơn hàng tại thực thể Chi tiết đơn hàng
 - Một sản phẩm thuộc về nhiều chi tiết đơn hàng nhưng một bản ghi chi tiết chỉ chứa một sản phẩm ==> thuộc tính Mã sản phẩm tại thực thể Chi tiết đơn hàng
 ### Lược đồ quan hệ thực thể
+
 ![](/BE101/Session1/ecommerce.png)
