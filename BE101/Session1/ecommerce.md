@@ -98,7 +98,6 @@ Một trang web bán hàng trực tuyến cần quản lý thông tin về:
 ---
 **_Ghi chú:_**
 * **Đối với các thuộc tính Địa chỉ:** Địa chỉ được ghi theo bản đồ hành chính 34 tỉnh thành từ tháng 7/2025 hoặc bản đồ hành chính 63 tỉnh thành từ tháng 01/2025 (TP Huế trực thuộc trung ương, có 02 quận trực thuộc thành phố), nhưng đều phải ghi chi tiết địa chỉ từ cấp xã/phường đến cấp tỉnh/TP trực thuộc TW (từ số nhà đến thôn/ tổ dân phố có thể bỏ qua).
-* **Đối với thuộc tính Ngày ký hợp đồng lao động tại thực thể Nhân viên:** Chỉ ghi nhận ngày ký hợp đồng lao động đầu tiên, không ghi nhận ngày ký hợp đồng gia hạn lao động.
 ---
 
 
@@ -114,3 +113,4 @@ Một trang web bán hàng trực tuyến cần quản lý thông tin về:
 ### Lược đồ quan hệ thực thể
 
 ![](/BE101/Session1/ecommerce.png)
+
