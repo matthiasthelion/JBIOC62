@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "TestRectangle",
+      "request": "launch",
+      "mainClass": "TestRectangle",
+      "projectName": "JBIOC62_15c91444"
+    },
+    {
+      "type": "java",
+      "console": "integratedTerminal",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "env": {
+        "LANG": "en_US.UTF-8"
+      }
+    }
+  ]
+}
